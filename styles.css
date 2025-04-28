@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa; 
+    transition: background-color 0.4s ease-in-out;
+}
+
+.container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px; 
+}
+
+.container-formulario {
+    display: none;
+}
+
+.container-formulario.ativo {
+    display: block;
+}
+
+h2 {
+    color: #2196f3; 
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px); 
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #bbdefb; 
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #64b5f6; 
+    box-shadow: 0 0 5px rgba(100, 181, 246, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #2196f3; 
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #1976d2;
+}
+
+.container-botao-alternar {
+    margin-top: 25px;
+}
+
+.container-botao-alternar button {
+    background: none;
+    color: #2196f3;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.container-botao-alternar button:hover {
+    color: #1976d2;
+    text-decoration: underline;
+}
